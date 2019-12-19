@@ -16,8 +16,7 @@ RUN apt-get install -y curl
 WORKDIR /tmp
 RUN curl -OL http://www.coliop.org/_download/Cmpl-1-12-0-Linux64.tar.gz
 RUN tar xf Cmpl-1-12-0-Linux64.tar.gz
-WORKDIR Cmpl
-WORKDIR $USERHOME
-ENV CMPLBINARY $USERHOME/Cmpl
+RUN mv Cmpl /opt/
+ENV CMPLBINARY /opt/Cmpl
 
 CMD ["/bin/bash"]
