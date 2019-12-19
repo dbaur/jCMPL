@@ -9,7 +9,7 @@ ENV NOTVISIBLE "in users profile"
 
 # Install Java
 RUN apt-get update -y
-RUN apt-get install -y openjdk-11-jre
+RUN apt-get install -y openjdk-8-jre
 RUN apt-get install -y curl
 
 # Installing CMPL
