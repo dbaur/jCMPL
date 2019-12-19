@@ -17,6 +17,6 @@ WORKDIR /tmp
 RUN curl -OL http://www.coliop.org/_download/Cmpl-1-12-0-Linux64.tar.gz
 RUN tar xf Cmpl-1-12-0-Linux64.tar.gz
 RUN mv Cmpl /opt/
-ENV CMPLBINARY /opt/Cmpl
+ENV CMPLBINARY /opt/Cmpl/cmpl
 
 CMD ["/bin/bash"]
